@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_login"
+              android:orientation="vertical">
+<TextView
+    android:id="@+id/temptitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/titlesize"
+    android:textColor="@color/titlecolor"
+    android:text="@string/login_request"
+    android:gravity="center_horizontal"/>
+    <EditText
+        android:id="@+id/et_request_num"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的请求码是……"
+        android:ems="12"
+        android:background="@drawable/qq_edit_login"/>
+</LinearLayout>

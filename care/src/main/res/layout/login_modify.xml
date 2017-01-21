@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_login"
+    >
+
+    <TextView
+        android:id="@+id/titlemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="请修改您的登入信息……"
+        android:textColor="@color/titlecolor"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/temp_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlemessage"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/user_name"
+        android:textColor="@color/titlecolor"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/vt_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titlemessage"
+        android:layout_toEndOf="@+id/temp_user_name"
+        android:background="@drawable/qq_edit_login"
+        android:ems="12"/>
+
+    <EditText
+        android:id="@+id/vt_user_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/vt_user_name"
+        android:layout_below="@+id/vt_user_name"
+        android:background="@drawable/qq_edit_login"
+        android:ems="12"
+        android:inputType="none"/>
+
+    <TextView
+        android:id="@+id/temp_user_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/temp_user_name"
+        android:layout_below="@+id/temp_user_name"
+        android:layout_marginTop="20dp"
+        android:text="@string/user_pwd"
+        android:textColor="@color/titlecolor"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
